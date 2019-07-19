@@ -14,6 +14,7 @@ let time = null,
 const canSendMessage = () => {
     time = new Date();
     day = time.getDay();
+    day = day === 0 ? 7 : day; // 修正周日逻辑
     hour = time.getHours();
     day >= startDay && day <= endDay && hour >= startHour && hour <= endHour && axios({
         method: 'post',
