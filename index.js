@@ -1,3 +1,10 @@
+/*
+ * @Description: In User Settings Edit
+ * @Author: your name
+ * @Date: 2019-07-05 23:50:28
+ * @LastEditTime: 2019-08-17 16:58:10
+ * @LastEditors: Please set LastEditors
+ */
 const axios = require('axios');
 const {
     requestData,
@@ -18,5 +25,6 @@ const canSendMessage = () => {
         data: JSON.stringify(requestData)
     })
 }
+// commit test 1;
 setInterval(canSendMessage, during)
 
